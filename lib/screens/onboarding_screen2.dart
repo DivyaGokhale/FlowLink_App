@@ -11,7 +11,7 @@ class OnboardingScreen2 extends StatelessWidget {
           // Background Image
           Positioned.fill(
             child: Image.asset(
-              "assets/images/grocery_bg.png", // replace with your image
+              "assets/images/vegetables.png", 
               fit: BoxFit.cover,
             ),
           ),
@@ -27,7 +27,7 @@ class OnboardingScreen2 extends StatelessWidget {
                 borderRadius: BorderRadius.circular(24),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.1),
+                    color: Colors.black,
                     blurRadius: 10,
                     spreadRadius: 2,
                   ),

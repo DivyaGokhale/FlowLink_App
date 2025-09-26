@@ -9,7 +9,7 @@ class OnboardingScreen extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/bananas.jpg"), // First screen image
+            image: AssetImage("assets/images/bananas.jpg"), 
             fit: BoxFit.cover,
           ),
         ),

@@ -62,7 +62,7 @@ class OnboardingScreen3 extends StatelessWidget {
                     children: [
                       TextButton(
                         onPressed: () {
-                          // Skip logic
+                           Navigator.pushReplacementNamed(context, '/login_screen');                             
                         },
                         child: const Text("Skip"),
                       ),
