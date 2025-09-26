@@ -25,3 +25,5 @@ flutter:
     - assets/images/meat.png
     - assets/images/google.png
     - assets/images/apple.png
+    - assets/images/cover_photo.jpg
+    - assets/images/profile_photo.png

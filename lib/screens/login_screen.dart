@@ -63,7 +63,9 @@ class LoginScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(12),
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacementNamed(context, '/setting');
+                      },
                       child: const Text("Continue with Email"),
                     ),
                     const SizedBox(height: 20),
