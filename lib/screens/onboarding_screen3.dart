@@ -106,7 +106,7 @@ class OnboardingScreen3 extends StatelessWidget {
                           padding: const EdgeInsets.all(12),
                         ),
                         onPressed: () {
-                          Navigator.pushReplacementNamed(context, '/login_screen');
+                          Navigator.pushReplacementNamed(context, '/signup');
                         },
                         child: const Icon(Icons.arrow_forward),
                       ),

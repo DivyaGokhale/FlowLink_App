@@ -12,6 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.6
+  google_maps_flutter:
+  geolocator:
 
 dev_dependencies:
   flutter_test:
@@ -23,7 +25,7 @@ flutter:
     - assets/images/bananas.jpg
     - assets/images/vegetables.png
     - assets/images/meat.png
-    - assets/images/google.png
-    - assets/images/apple.png
+    - assets/icons/google.png
+    - assets/icons/apple.png
     - assets/images/cover_photo.jpg
     - assets/images/profile_photo.png

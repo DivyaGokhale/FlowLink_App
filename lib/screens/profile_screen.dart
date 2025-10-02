@@ -9,7 +9,6 @@ class ProfileScreen extends StatefulWidget {
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
 }
-
 class _ProfileScreenState extends State<ProfileScreen> {
   String gender = "Male"; // default selected
 
@@ -17,7 +16,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.arrow_back, color: Colors.black),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.pushReplacementNamed(context, '/setting'),
+        ),
         title: const Text(
           "Profile",
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),

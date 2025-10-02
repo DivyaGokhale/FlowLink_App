@@ -8,7 +8,10 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.arrow_back, color: Colors.black),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.pushReplacementNamed(context, '/home'),
+        ),
         title: const Text(
           "Setting",
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
@@ -34,12 +37,12 @@ class SettingsScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: const [
                   Text(
-                    "Wade Warren",
+                    "Divya Gokhale",
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 4),
                   Text(
-                    "@WadeWarren",
+                    "@DivyaGokhale",
                     style: TextStyle(color: Colors.grey),
                   ),
                 ],
@@ -62,9 +65,15 @@ class SettingsScreen extends StatelessWidget {
 
           // Security
           sectionTitle("Security"),
-          settingTile(Icons.lock_outline, "Change Password"),
-          settingTile(Icons.lock_reset_outlined, "Forgot Password"),
-          settingTile(Icons.security_outlined, "Security"),
+          settingTile(Icons.lock_outline, "Change Password", onTap: () {
+            Navigator.pushNamed(context, '/change_password');
+          }),
+          settingTile(Icons.lock_reset_outlined, "Forgot Password", onTap: () {
+            Navigator.pushNamed(context, '/forgot_password');
+          }),
+          settingTile(Icons.security_outlined, "Security", onTap: () {
+            Navigator.pushNamed(context, '/security');
+          }),
 
           const SizedBox(height: 20),
 
@@ -78,6 +87,7 @@ class SettingsScreen extends StatelessWidget {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.green,
         unselectedItemColor: Colors.grey,
+        currentIndex: 4,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: ""),
           BottomNavigationBarItem(icon: Icon(Icons.explore_outlined), label: ""),

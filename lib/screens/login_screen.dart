@@ -64,9 +64,9 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ),
                       onPressed: () {
-                        Navigator.pushReplacementNamed(context, '/setting');
+                        Navigator.pushNamed(context, '/email_password_login');
                       },
-                      child: const Text("Continue with Email"),
+                      child: const Text("Continue"),
                     ),
                     const SizedBox(height: 20),
 
@@ -83,18 +83,8 @@ class LoginScreen extends StatelessWidget {
                     const SizedBox(height: 20),
 
                     OutlinedButton.icon(
-                      icon: Image.asset("assets/images/google.png", height: 20),
+                      icon: Image.asset("assets/icons/google.png", height: 20),
                       label: const Text("Continue with Google"),
-                      onPressed: () {},
-                      style: OutlinedButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        side: const BorderSide(color: Colors.black54),
-                      ),
-                    ),
-                    const SizedBox(height: 12),
-                    OutlinedButton.icon(
-                      icon: Image.asset("assets/images/apple.png", height: 20),
-                      label: const Text("Continue with Apple"),
                       onPressed: () {},
                       style: OutlinedButton.styleFrom(
                         padding: const EdgeInsets.symmetric(vertical: 14),

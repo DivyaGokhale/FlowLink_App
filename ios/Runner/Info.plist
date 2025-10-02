@@ -45,5 +45,10 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<!-- Location permission descriptions -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app uses your location to show your position on the map and find nearby stores.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Location access helps us provide accurate location-based features.</string>
 </dict>
 </plist>
